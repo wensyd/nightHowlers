@@ -1,3 +1,5 @@
 [[redirects]]
-  from = "/*"
+  from = "/"
   to = "/index.html"
+ 200
+
