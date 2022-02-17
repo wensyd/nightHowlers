@@ -1345,3 +1345,20 @@ label.error {
   }
 }
 
+.blogsHeader{
+  margin-top: 5px;
+  padding-right: 0;
+  background-size: cover;
+}
+
+.blogimg:hover{
+transform: scaleX(-1);
+
+}
+
+.blogh1{
+ color: 
+ #4b217a;
+ font-weight: 600;
+}
+

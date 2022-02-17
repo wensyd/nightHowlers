@@ -25,8 +25,9 @@ function MainNavigation() {
         <Route path="/about" exact={true} component={About} />
        
         {/** Blog */}
-        <Route path="/bloggrid" exact={true} component={BlogGrid} />
-  
+        <Route path="/blog" exact={true} component={BlogGrid} />
+
+        <Route path="/blogsingle" exact={true} component={BlogSingle}/>
         {/** invalid routes redirection */}
         <Route component={NotFound} />
       </Switch>
