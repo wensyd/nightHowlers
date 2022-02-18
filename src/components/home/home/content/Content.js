@@ -19,31 +19,31 @@ const Content = () => {
                                 </h1>
                             </div>
                             <div className="col-md-4 ">
-                                <a href="#">
+                    
                                     <div className="icon-box-4 h-100">
                                         <i className="icofont-hand-power"></i>
                                         <h4 className="h4-md mb-3">EMPOWERMENT</h4>
                                         <p></p>
                                     </div>
-                                </a>
+                                
                             </div>
                             <div className="col-md-4 ">
-                                <a href="#">
+                                
                                     <div className="icon-box-4 h-100">
                                         <i className="icofont-light-bulb"></i>
                                         <h4 className="h4-md mb-3">INNOVATION</h4>
                                         <p></p>
                                     </div>
-                                </a>
+                                
                             </div>
                             <div className="col-md-4 ">
-                                <a href="#">
+                                
                                     <div className="icon-box-4 h-100">
                                         <i className="icofont-history"></i>
                                         <h4 className="h4-md mb-3">CONSISTENCY</h4>
                                         <p></p>
                                     </div>
-                                </a>
+                                
                             </div>
                             <div className="text-center btn-center mx-auto">
                                 <a href="https://form.jotform.com/220327647149155" target="_blank" className="btn-theme bg-navy-blue">Join Our Team <i className="icofont-rounded-right"></i></a>
