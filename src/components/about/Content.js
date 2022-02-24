@@ -1,8 +1,47 @@
-import React from "react";
+import React, {useState, useEffect, useCallback} from "react";
+import {client} from '../../Client'
 
 const Content = () => {
+    const [aboutPage, setAboutPage] = useState([])
+
+    const cleanUpAboutPage = useCallback ((rawData) => {
+        const cleanAboutPage = rawData.map((about) => {
+            const {sys, fields} = about
+            const aboutDescription = fields.description
+            const updatedAbout = {aboutDescription}
+            return updatedAbout
+        })
+        setAboutPage(cleanAboutPage)
+    }, [])
+
+    const getAboutPage = useCallback(async() => {
+        try{
+            const response = await client.getEntries({content_type: 'about'})
+            const responseData = response.items
+            if(responseData){
+                cleanUpAboutPage(responseData)
+            }else {
+                setAboutPage([])
+            }
+        } catch(error){
+            console.log(error)
+        }
+    }, [cleanUpAboutPage])
+
+    useEffect(()=> {
+        getAboutPage()
+    },[getAboutPage])
+
+console.log(aboutPage)
+
+
+
+
     return (
         <>
+        {aboutPage.map((item) => {
+            const {aboutDescription} = item
+            return (
             <main id="body-content">
                 <header >
                     <div className="mb-5"></div>
@@ -14,7 +53,7 @@ const Content = () => {
                                 <h2 className="mb-4 fw-7 txt-blue" align="center">
                                     About <span className="fw-6 txt-purple">Night Howlers</span>
                                 </h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed metus viverra, congue sem ut, finibus odio. Praesent maximus massa enim, quis viverra velit accumsan ut. Nulla imperdiet ultricies justo quis tincidunt. Proin dui nibh, tempus ac metus at, aliquet ultricies sem. Vestibulum lobortis vestibulum est, non sagittis nisl gravida ac. Etiam ac ultrices enim, posuere mattis est. Nullam augue purus, fringilla ut venenatis at, fringilla in ante. In eget ante aliquam, ornare neque in, rutrum ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus magna mauris, suscipit at libero ut, convallis volutpat lacus. In consectetur ac diam id commodo. Vestibulum hendrerit congue sem quis imperdiet. Praesent quis velit eget dolor fringilla efficitur in in velit. Etiam vitae diam sed sapien porttitor elementum at nec tortor. Morbi quis orci sed mauris imperdiet aliquam non eu quam. Nunc dapibus dictum quam nec condimentum. </p>
+                                <p>{aboutDescription}</p>
                                 
                             </div>
                             <div className="col-md-6">
@@ -25,6 +64,8 @@ const Content = () => {
                 </section>
                 
             </main>
+            )
+        })}
         </>
     );
 };

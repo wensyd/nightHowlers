@@ -43,9 +43,10 @@ const Slider = () => {
                 data-slotamount="default"
                 data-hideafterloop="0"
                 data-hideslideonmobile="off"
-                data-easein="Power4.easeOut"
-                data-easeout="Power4.easeOut"
-                data-masterspeed="1000"
+                data-easein="Power2.easeOut"
+                data-easeout="Power2.easeOut"
+                data-speed="300"
+                data-masterspeed="300"
                 data-thumb="../../assets/images/waterfal-100x50.jpg"
                 data-rotate="0"
                 data-saveperformance="off"
@@ -68,7 +69,7 @@ const Slider = () => {
                   alt=""
                   data-bgposition="center center"
                   data-kenburns="on"
-                  data-duration="7000"
+                  data-duration="300"
                   data-ease="Linear.easeNone"
                   data-scalestart="100"
                   data-scaleend="150"
@@ -119,7 +120,7 @@ const Slider = () => {
                   data-whitespace="nowrap"
                   data-type="text"
                   data-responsive_offset="on"
-                  data-frames='[{"delay": 500,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay": "wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                  data-frames='[{"delay": 200,"speed":300,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay": "wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                   data-textalign="['center','center','center','center']"
                   data-paddingtop="[0,0,0,0]"
                   data-paddingright="[0,0,0,0]"
@@ -127,10 +128,7 @@ const Slider = () => {
                   data-paddingleft="[0,0,0,0]"
                   data-fontsize="['16','16','16','13']"
                   data-lineheight="['34','34','34','50']"
-                >
-                    {/* <div className="slider-p text-center"><h2>Enjoy a world tour, while making life changing money.We have the miles.</h2></div>
-                   */}
-                </div>
+                ></div>
 
                 <div
                   className="tp-caption tp-resizeme small_light_white "
@@ -144,7 +142,7 @@ const Slider = () => {
                   data-whitespace="nowrap"
                   data-type="text"
                   data-responsive_offset="on"
-                  data-frames='[{"delay":600,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                  data-frames='[{"delay":200,"speed":300,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                   data-textalign="['inherit','inherit','inherit','inherit']"
                   data-paddingtop="[0,0,0,0]"
                   data-paddingright="[0,0,0,0]"
@@ -160,13 +158,13 @@ const Slider = () => {
                 data-slotamount="default"
                 data-hideafterloop="0"
                 data-hideslideonmobile="off"
-                data-easein="Power4.easeInOut"
-                data-easeout="Power4.easeInOut"
-                data-masterspeed="2000"
+                data-easein="Power2.easeInOut"
+                data-easeout="Power2.easeInOut"
+                data-masterspeed="300"
                 data-thumb="rev-slider/assets/images/datcolor-100x50.jpg"
                 data-rotate="0"
                 data-fstransition="fade"
-                data-fsmasterspeed="1500"
+                data-fsmasterspeed="300"
                 data-fsslotamount="7"
                 data-saveperformance="off"
                 data-title="Intro"
@@ -207,7 +205,7 @@ const Slider = () => {
                   data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
                   data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
                   data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
-                  data-start="700"
+                  data-start="300"
                   data-splitin="none"
                   data-splitout="none"
                   data-responsive_offset="on"
@@ -247,9 +245,9 @@ const Slider = () => {
                 data-slotamount="default"
                 data-hideafterloop="0"
                 data-hideslideonmobile="off"
-                data-easein="Power4.easeInOut"
-                data-easeout="Power4.easeInOut"
-                data-masterspeed="2000"
+                data-easein="Power2.easeInOut"
+                data-easeout="Power2.easeInOut"
+                data-masterspeed="300"
                 data-thumb="rev-slider/assets/images/datcolor-100x50.jpg"
                 data-rotate="0"
                 data-fstransition="fade"
