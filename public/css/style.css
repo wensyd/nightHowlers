@@ -1362,3 +1362,14 @@ transform: scaleX(-1);
  font-weight: 600;
 }
 
+.blog-content{
+  padding-bottom: 70px;
+  margin-right: 0px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 10px;
+}
