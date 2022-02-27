@@ -58,13 +58,13 @@ console.log(blogPosts)
                 <hr className="w-75"/>
                 </section>
                 </main>
-                <div className="row">
+                <div className="container" id="blogContainer">
         {blogPosts.map((item)=> {
             
            const { id, slug, blogTitle, blogDescription, blogBody, blogImage, index }= item
             return (
-                                <div key ={index} className="card col-md-6">
-                                    <img src={blogImage} alt="" className="card-img-top rounded img-fluid" />
+                                <div key ={index} className="card">
+                                    <img src={blogImage} alt="" className="card-img-top rounded img-thumbnail" />
                                     
                                     <h4 className="card-title h4-md mb-3" align="center"><a href={slug}>{blogTitle}</a></h4>
                                     <p className="card-text">{blogDescription}</p>

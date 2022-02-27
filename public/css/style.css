@@ -1362,14 +1362,18 @@ transform: scaleX(-1);
  font-weight: 600;
 }
 
-.blog-content{
-  padding-bottom: 70px;
-  margin-right: 0px;
+#blogContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card{
-  display: flex;
-  flex-direction: column;
-  width: 300px;
+  width: 350px;
   margin: 10px;
+}
+
+.card-img-top{
+  width: 100%;
+  
 }
