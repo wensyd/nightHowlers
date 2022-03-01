@@ -66,9 +66,9 @@ console.log(blogPosts)
                                 <div key ={index} className="card">
                                     <img src={blogImage} alt="" className="card-img-top rounded img-thumbnail" />
                                     
-                                    <h4 className="card-title h4-md mb-3" align="center"><a href={slug}>{blogTitle}</a></h4>
+                                    <h4 className="card-title h4-md mb-3" align="center"><a href={`/blogsingle/${slug}`}>{blogTitle}</a></h4>
                                     <p className="card-text">{blogDescription}</p>
-                                    <a href={slug} className="btn btn-primary btn-theme bg-navy-blue no-shadow">Read More <i className="icofont-rounded-right"></i></a>
+                                    <a href={`/blogsingle/${slug}`}className="btn btn-primary btn-theme bg-navy-blue no-shadow">Read More <i className="icofont-rounded-right"></i></a>
                                 </div>
                         
                      
