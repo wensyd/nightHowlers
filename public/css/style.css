@@ -1380,5 +1380,10 @@ transform: scaleX(-1);
 
 #singleContainer{
 display: flex;
+justify-content: center;
 margin-top: 15%;
+}
+
+#singleImage{
+ align-self: center;
 }

@@ -79,7 +79,7 @@ const Content = () => {
                 const blogBody = post.fields.body
                     return(
                                         <div className="container">
-                                            <img src={blogImage} alt="" className="rounded mb-4" />
+                                            <img src={blogImage} alt="" className="rounded mb-4 px-5 img-fluid" id="singleImage" />
                                           
                                             <h4 className="h4-md mb-3 fw-7 txt-blue" align="center">{blogTitle}</h4>
                                             <p>{blogDescription}</p>
