@@ -9,27 +9,24 @@ const Content = () => {
 
     const cleanSingleBlog = useCallback((rawData) => {
    
-       const cleanSingleBlog = rawData
-       .filter((post) =>{
+       const cleanSingleBlog = rawData.filter((post) =>{
           
-     
            if(post.fields.slug === params.slug) {
               
               
-              
-               const {sys, fields} = post
-               
-               const {title, slug, description, body} = fields
-               const featuredImage = fields.featuredImage.fields.file.url
-            
+            const {sys, fields} = post
+            const slug = fields.slug
+            const blogTitle = fields.title
+            const blogImage = fields.featuredImage.fields.file.url
+            const blogDescription = fields.description
+            const blogBody = fields.body
             
                
                 const updateSingleBlog = {
-                    "title":title,
-                    "slug":slug, 
-                    "description": description,
-                    "body": body,
-                    "featuredImage": featuredImage}
+                   
+                slug, blogTitle, blogImage,blogDescription,blogBody
+                
+                }
                 
                 return updateSingleBlog
            }
@@ -72,9 +69,9 @@ const Content = () => {
 
                 </header>
                 </main>
-            <div className="container">
+            <div className="container" id="singleContainer">
                 {singleBlog.map((post) => {
-                    
+                    // console.log(post)
                 const slug = post.fields.slug
                 const blogTitle = post.fields.title
                 const blogImage = post.fields.featuredImage.fields.file.url

@@ -7,8 +7,9 @@ const Content = () => {
     const cleanUpAboutPage = useCallback ((rawData) => {
         const cleanAboutPage = rawData.map((about) => {
             const {sys, fields} = about
+            const aboutImage = fields.aboutImage.fields.file.url
             const aboutDescription = fields.description
-            const updatedAbout = {aboutDescription}
+            const updatedAbout = {aboutDescription, aboutImage}
             return updatedAbout
         })
         setAboutPage(cleanAboutPage)
@@ -40,7 +41,7 @@ console.log(aboutPage)
     return (
         <>
         {aboutPage.map((item) => {
-            const {aboutDescription} = item
+            const {aboutDescription, aboutImage} = item
             return (
             <main id="body-content">
                 <header >
@@ -57,7 +58,7 @@ console.log(aboutPage)
                                 
                             </div>
                             <div className="col-md-6">
-                                <img className="w-100" src="images/blog_img_2.jpg" alt="" />
+                                <img className="w-100" src={aboutImage} alt="" />
                             </div>
                         </div>
                     </div>
