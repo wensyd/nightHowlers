@@ -26,7 +26,7 @@ const Footer = () => {
 						<div className="row text-md-center text-center">
 						
 							<div className="col-sm-12 col-md-8 text-md-right text-center">
-								Designed by <a href="#" rel="nofollow">DeSousa Web Designs</a> © 2022 All Rights Reserved <a>Night Howlers LLC</a>
+								Designed by <a href="#" rel="nofollow">DeSousa Web Designs</a> © 2023 All Rights Reserved <a>Night Howlers LLC</a>
 								
 								
             				</div>
